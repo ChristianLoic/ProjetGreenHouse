@@ -1,5 +1,5 @@
 import { Component, VERSION } from '@angular/core';
-import { ChartType } from 'angular-google-charts/lib/types/chart-type';
+import { ChartType } from 'angular-google-charts';
 
 @Component({
   selector: 'my-app',
@@ -9,7 +9,7 @@ import { ChartType } from 'angular-google-charts/lib/types/chart-type';
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
-     myType = ChartType.PieChart;
+     myType = ChartType.LineChart;
       myData = [
     ['London', 8136000],
     ['New York', 8538000],
