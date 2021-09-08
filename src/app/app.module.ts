@@ -21,7 +21,7 @@ import { SensorDetailsComponent } from './sensor-details/sensor-details.componen
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: SerreListComponent },
-     
+      { path: 'serre/:idSerre', component: SensorListComponent },
       { path: 'sensors/:idSensor', component: SensorDetailsComponent },
       { path: 'allSensors', component: AllSensorComponent}
     ])
