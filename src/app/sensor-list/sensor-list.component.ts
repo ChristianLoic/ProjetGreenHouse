@@ -7,6 +7,8 @@ import { Serre, serres } from '../serres';
 
 import { Sensor, sensors } from '../sensors';
 
+import { Input } from '@angular/core';
+
 
 
 
@@ -17,13 +19,16 @@ import { Sensor, sensors } from '../sensors';
 })
 export class SensorListComponent implements OnInit {
 
-   sensors = new Array<Sensor>();
+  @Input() sensor!: Sensor | undefined;
+    sensors =sensors;
+    serres=serres;
+    serre : Serre | undefined;
 
-  serre : Serre | undefined;
+    //capteurs = new Array<Sensor>();
 
-  sensor :Sensor | undefined;
+  //// sensor :Sensor | undefined;
 
-
+  ///.push(sensors.find(sensor=>sensor.idSerre==this.serre.idSerre))
    
   constructor(  private route: ActivatedRoute) { }
 
@@ -37,19 +42,34 @@ export class SensorListComponent implements OnInit {
    this.serre = serres.find(serre => serre.idSerre === serreIdFromRoute);
 
    
-    // fill the sensors list 
-    
-   for (var i = 0; i<sensors.length; i++)
-   {         
-          this.sensor= sensors.find(sensor=> sensor.idSensor === i)
-          if(this.sensor.idSerre==serreIdFromRoute )
-          {
-              this.sensors.push(this.sensor) 
-          }
-   }
+    // fill the captors list 
+
+    // for (var i = 0; i<sensors.length; i++)
+    // {
+    //        var moksensor =sensors.find(sensor=> sensor.idSensor === i)
+    //        if(moksensor.idSerre ===serreIdFromRoute)
+    //        {
+    //          this.capteurs.push(moksensor);
+
+    //        }
+     // this.sensor= sensors.find(sensor=> sensor.idSensor === i)
+  //         if(this.sensor.idSerre==serreIdFromRoute )
+  //         {
+  //             this.sensors.push(this.sensor) 
+  //         }
+
+
+
+    }
+  //  {         
+  //         this.sensor= sensors.find(sensor=> sensor.idSensor === i)
+  //         if(this.sensor.idSerre==serreIdFromRoute )
+  //         {
+  //             this.sensors.push(this.sensor) 
+  //         }
+  //  }
   
    
    
   }
   
-}

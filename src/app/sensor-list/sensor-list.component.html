@@ -1,18 +1,21 @@
-<h2>liste des capteurs de la serre</h2>
+<h2>liste des capteurs de la serre    {{serre.idSerre}}</h2>
 
 
 
-<div *ngIf="serre">
+<!-- <div *ngIf="serre"> -->
+<div *ngFor="let sensor of sensors">
+    
+  <div *ngIf="sensor.idSerre == serre.idSerre" >
+<h3>{{ serre.idSerre }}</h3>
 
-<div *ngFor="let sensor of sensors  ">
-
-<h3>{{ sensor.idSensor }}</h3>
 <h4>{{ sensor.description }}</h4>
+
 <p>{{ sensor.typeData }}</p>
+  </div>
 
-
+</div>
   <!-- /*<h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
   <button (click)="addToCart(product)">Buy</button>*/ -->
-</div>
+<!-- </div> -->
