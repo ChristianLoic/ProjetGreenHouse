@@ -3,12 +3,16 @@
 <div *ngFor="let serre of serres">
 
   <h3>
+     
     serre {{serre.idSerre}}
+    
+
+
   </h3>
   <p *ngIf="serre.description">
   Description: {{ serre.description }}
 </p>
-<a  class=button>
+<a  class=button [title]="  ' serre' +serre.idSerre" [routerLink]= "['/serres', serre.idSerre]">
   voir les informations des capteurs
 </a>
 </div>
