@@ -6,10 +6,16 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { HelloComponent } from './hello.component';
+import  { SerreListComponent } from './serre-list/serre-list.component' ;
 
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot([])],
-  declarations: [AppComponent, HelloComponent, TopBarComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    TopBarComponent,
+    SerreListComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
