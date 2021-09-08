@@ -1,0 +1,14 @@
+<h2> Serres</h2>
+
+<div *ngFor="let serre of serres">
+
+  <h3>
+    serre {{serre.idSerre}}
+  </h3>
+  <p *ngIf="serre.description">
+  Description: {{ serre.description }}
+</p>
+<a  class=button>
+  voir les informations des capteurs
+</a>
+</div>

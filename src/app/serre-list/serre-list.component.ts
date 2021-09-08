@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { serres } from '../Serres';
+import { serres } from '../serres';
 
 @Component({
   selector: 'app-serre-list',
