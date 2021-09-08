@@ -11,6 +11,7 @@ import { HelloComponent } from './hello.component';
 import { SerreListComponent } from './serre-list/serre-list.component';
 import { SensorListComponent } from './sensor-list/sensor-list.component';
 import { AllSensorComponent } from './all-sensor/all-sensor.component';
+import { SensorDetailsComponent } from './sensor-details/sensor-details.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import { AllSensorComponent } from './all-sensor/all-sensor.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: SerreListComponent },
-      { path: 'serres/:idSerre', component: SensorListComponent },
+     
+      { path: 'sensors/:idSensor', component: SensorDetailsComponent },
       { path: 'allSensors', component: AllSensorComponent}
     ])
   ],
@@ -30,7 +32,8 @@ import { AllSensorComponent } from './all-sensor/all-sensor.component';
     TopBarComponent,
     SerreListComponent,
     SensorListComponent,
-    AllSensorComponent
+    AllSensorComponent,
+    SensorDetailsComponent
   ],
   bootstrap: [AppComponent]
 })
