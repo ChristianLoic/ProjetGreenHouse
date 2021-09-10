@@ -1,53 +1,73 @@
 
 
- 
+
+ <nav id="header" class="fixed w-full">
 
   <!--Nav-->
-
-  <div class="  w-full z-10 bg-gray-200 rounded-lg border-b border-grey-light ">
-      <div class="  mx-auto flex flex-wrap  justify-between mt-0 py-4">
-          <div class="relative ">
-              <div class=" top-4 left-3"> <i class=" text-gray-400  z-20 hover:text-gray-500"></i> </div> <input type="text" class="h-14 w-96 pl-10 pr-20 bg-gray-300 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Search anything...">
-              <div class="absolute top-2 right-2"> <button class="block bg-gray-200  flex items-center px-3 py-2 border rounded text-black border-grey-white hover:text-white hover:border-purple ">
-              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Search</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
-              </button> </div>
-          </div>
+  <div class="relative w-full z-10 fixed top-0 bg-gray-200 border-b border-grey-light">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
+      <div class="pl-4 flex items-center">
+        <svg class="h-5 pr-3 fill-current text-teal-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <path d="M17.94 11H13V9h4.94A8 8 0 0 0 11 2.06V7H9V2.06A8 8 0 0 0 2.06 9H7v2H2.06A8 8 0 0 0 9 17.94V13h2v4.94A8 8 0 0 0 17.94 11zM10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/>
+    </svg>
+        <a class="text-teal-700 text-base no-underline hover:no-underline font-extrabold text-xl" href="#"> Searchy</a>
+        <div id="search-toggle" class="search-icon cursor-pointer pl-6">
+          <svg class="fill-current pointer-events-none text-grey-darkest w-4 h-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+      <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
+    </svg>
+        </div>
       </div>
-</div>
- 
+
+      <div class="pr-4">
+        <button id="nav-toggle" class="block lg:hidden flex items-center px-3 py-2 border rounded text-grey border-grey-dark hover:text-black hover:border-purple appearance-none focus:outline-none">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+        </button>
+      </div>
+
+    
+    </div>
+  </div>
+
+  <!--Search-->
+  <div class="relative w-full hidden bg-white shadow-xl" id="search-content">
+    <div class="container mx-auto py-4 text-black">
+      <input id="searchfield" type="search" placeholder="Search..." autofocus="autofocus" class="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl">
+    </div>
+
+  </div>
+
+</nav>
 
 
 
 
 
-  <!--css de base a rajouter body de chaque page -->
-<div class="p-24 container mx-auto "  >
-<div class="bg-white border p-6 rounded shadow ">
-<!--css de base a rajouter body de chaque page -->
 
 
 
-<div class=" flex flex-wrap -mx-px overflow-hidden sm:-mx-3 md:-mx-2 lg:-mx-3 xl:-mx-4">
+
+<!-- css du body a iinclure dans chaque page  -->
+  <div class="pt-24 container mx-auto">
+    <div class="bg-white border p-6 rounded shadow h-full">
+      <!-- css du body a iinclure dans chaque page  -->
+
+
 <h2> Serres</h2>
 
-<div *ngFor="let serre of serres" class="my-px px-px w-full  overflow-hidden sm:my-3 sm:px-3 md:my-2 md:px-2 lg:my-3 lg:px-3 xl:my-4 xl:px-4">
+<div *ngFor="let serre of serres">
 
-  <h3>
-     
-    serre {{serre.idSerre}}
-    
+        <h3>
+          
+          serre {{serre.idSerre}}
+          
 
 
-  </h3>
-  <p *ngIf="serre.description">
-  Description: {{ serre.description }}
-</p>
-<a  class=button [title]="  ' serre' +serre.idSerre" [routerLink]= "['/serres', serre.idSerre]">
-  voir les informations des capteurs
-</a>
+        </h3>
+        <p *ngIf="serre.description">
+        Description: {{ serre.description }}
+      </p>
+      <a  class=button [title]="  ' serre' +serre.idSerre" [routerLink]= "['/serres', serre.idSerre]">
+        voir les informations des capteurs
+      </a>
 </div>
-</div>
-</div>
-<div class="flex flex-wrap overflow-hidden">
-</div>
-
+    </div>

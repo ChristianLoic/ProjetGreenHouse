@@ -16,23 +16,8 @@ export const serres = [
     idProfil: 1
   },
   {
-    idSerre: 3,
-    description: 'brocoli',
-    idProfil: 1
-  },
-  {
-    idSerre: 4,
-    description: 'brocoli',
-    idProfil: 1
-  },
-  {
-    idSerre: 5,
-    description: 'brocoli',
-    idProfil: 1
-  },
-  {
-    idSerre: 6,
-    description: 'brocoli',
+    idSerre: 1,
+    description: 'banane',
     idProfil: 1
   },
   {
@@ -41,23 +26,8 @@ export const serres = [
     idProfil: 1
   },
   {
-    idSerre: 3,
-    description: 'brocoli',
-    idProfil: 1
-  },
-  {
-    idSerre: 4,
-    description: 'brocoli',
-    idProfil: 1
-  },
-  {
-    idSerre: 5,
-    description: 'brocoli',
-    idProfil: 1
-  },
-  {
-    idSerre: 6,
-    description: 'brocoli',
+    idSerre: 1,
+    description: 'banane',
     idProfil: 1
   },
   {
@@ -66,23 +36,38 @@ export const serres = [
     idProfil: 1
   },
   {
-    idSerre: 3,
+    idSerre: 1,
+    description: 'banane',
+    idProfil: 1
+  },
+  {
+    idSerre: 2,
     description: 'brocoli',
     idProfil: 1
   },
   {
-    idSerre: 4,
+    idSerre: 1,
+    description: 'banane',
+    idProfil: 1
+  },
+  {
+    idSerre: 2,
     description: 'brocoli',
     idProfil: 1
   },
   {
-    idSerre: 5,
-    description: 'brocoli',
+    idSerre: 1,
+    description: 'banane',
     idProfil: 1
   },
   {
-    idSerre: 6,
+    idSerre: 2,
     description: 'brocoli',
     idProfil: 1
   },
+  
+  
+  
+  
+
 ];
