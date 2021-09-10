@@ -1,6 +1,35 @@
+
+
+  <nav id="header" class="fixed w-full">
+
+  <!--Nav-->
+
+
+  <div class=" relative w-full z-10 fixed top-0 bg-gray-200 rounded-lg border-b border-grey-light">
+  <div class="  items-center  w-full container mx-auto flex flex-wrap  justify-between mt-0 py-4">
+      <div class="relative">
+          <div class="absolute top-4 left-3"> <i class=" text-gray-400 z-20 hover:text-gray-500"></i> </div> <input type="text" class="h-14 w-96 pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Search anything...">
+          <div class="absolute top-2 right-2"> <button class="block  flex items-center px-3 py-2 border rounded text-black border-grey-white hover:text-white hover:border-purple ">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Search</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+          </button> </div>
+      </div>
+  </div>
+</div>
+</nav>
+
+
+
+
+
+  <!--css de base a rajouter body de chaque page -->
+<div class="p-24 container mx-auto "  >
+<div class="bg-white border p-6 rounded shadow ">
+
+
+<div class=" flex flex-wrap -mx-px overflow-hidden sm:-mx-3 md:-mx-2 lg:-mx-3 xl:-mx-4">
 <h2> Serres</h2>
 
-<div *ngFor="let serre of serres">
+<div *ngFor="let serre of serres" class="my-px px-px w-full  overflow-hidden sm:my-3 sm:px-3 md:my-2 md:px-2 lg:my-3 lg:px-3 xl:my-4 xl:px-4">
 
   <h3>
      
@@ -16,3 +45,7 @@
   voir les informations des capteurs
 </a>
 </div>
+</div>
+</div>
+<div class="flex flex-wrap overflow-hidden">
+
