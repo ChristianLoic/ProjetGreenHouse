@@ -1,16 +1,37 @@
-<a class="button"  [routerLink]= "['/']" >
-acceuil 
-</a>
+<div class="  items-center justify-between flex bg-green-50 bg-opacity-100 px-12 py-4 my-4 mx-auto shadow-2xl w-11/12">
 
-<a class="button"  [routerLink]= "['/']" >
-liste des serres
-</a>
+  <div class="text-2xl text-white font-semibold inline-flex items-center">
+        <img src="" class="w-16 mr-4" alt="logo">
+        <span>GreenHouse</span>
+  </div>
 
-<a class="button"  [routerLink]= "['allSensors']" >
-tous les capteurs
-</a>
+  <div >
+      <ul class="flex text-white">
+                <li class="ml-5 px-2 py-1  " > 
+                          <a  [routerLink]= "['/']" >  
+                                acceuil 
+                          </a>
+                  </li>
 
-<button>
-deconnexion
-</button>
+                <li class="ml-5 px-2 py-1  " > 
+                          <a  [routerLink]= "['/']" >
+                                liste des serres
+                          </a>
+                </li>
+
+                <li class="ml-5 px-2 py-1  " > 
+                          <a   [routerLink]= "['allSensors']" >
+                                tous les capteurs
+                          </a>
+                </li>
+
+                <li class="ml-5 px-3 py-1 rounded-md font-semibold bg-gray-100 text-gray-800">
+                            <a href="">
+                              deconnexion
+                            </a>
+                </li>
+      </ul>
+  </div>
+              
+</div>
 

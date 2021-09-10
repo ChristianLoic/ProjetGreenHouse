@@ -4,11 +4,14 @@
 </app-top-bar>
 
 <div class="container">
-<router-outlet></router-outlet>
-<button class="button"   type="reset"> reset</button>
-<button
-  class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400">Hello</button>
+        <router-outlet>              
+         </router-outlet>
+        <button class="button"   type="reset"> reset</button>
+        <button
+          class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400">Hello</button>
 
-<google-chart [type]="myType" [data]="myData" [width]=1200 [height]=800 ></google-chart>
+        <google-chart [type]="myType" [data]="myData" [width]=1200 [height]=800 ></google-chart>
+        <button
+          class="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400">Hello</button>
 
 </div>
