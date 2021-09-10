@@ -1,30 +1,9 @@
 
 
 
- <nav id="header" class=" w-full">
 
-  <!--Nav-->
- 
-    
+
    
-
-<!-- <div class=" items-center w-full  overflow-hidden  top-0 bg-gray-200 border-b border-grey-light">
-
-
-
-<div class="w-full  items-center justify-between mt-0 py-4">
-
-  <div class=" w-full mr-6 my-2">
-    <input type="search" class="bg-purple-white shadow rounded-lg border-0 p-3 w-96" placeholder="Search by zone...">
-    
-  </div>
-</div>
-    
-    
-  </div>
-
-  -->
-
   <div class="p-8">
           <div class="bg-white flex items-center rounded-full shadow-xl">
                   <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none bg-opacity-0" id="search" type="text" placeholder="Search by Zone">
@@ -37,7 +16,7 @@
                   
           </div>
 </div>
-</nav>
+
 
 
 
@@ -52,11 +31,17 @@
     <div class="bg-white border p-6 rounded shadow h-full">
       <!-- css du body a iinclure dans chaque page  -->
 
+  <!-- lien pour les les grids et les listes 
+  https://tailwindgrids.com/#/
+  https://tailwindtemplates.io/cards/ -->
+
+
+
 
 <h2> Serres</h2>
-
-<div *ngFor="let serre of serres">
-
+<div class="flex flex-wrap overflow-hidden sm:-mx-2">
+<div *ngFor="let serre of serres"   class="bg-white shadow p-4 rounded lg:w-64 w-full overflow-hidden sm:my-2 sm:px-2 xl:w-1/2 "> 
+     
         <h3>
           
           serre {{serre.idSerre}}
