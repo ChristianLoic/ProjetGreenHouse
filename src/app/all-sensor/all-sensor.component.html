@@ -1,15 +1,14 @@
-
 <!-- barre de recherche -->
-  <div class="p-8">
+<div class="p-8">
   <div class="bg-white flex items-center rounded-full shadow-xl">
-          <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none bg-opacity-0" id="search" type="text" placeholder="Search by Zone">
-          
-          <div class="p-4">
-            <button class="bg-green-50 text-white rounded-full p-2 hover:bg-white hover:text-black focus:outline-none w-12 h-12 flex items-center justify-center">
+    <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none bg-opacity-0" id="search" type="text" placeholder="Search by Zone">
+
+    <div class="p-4">
+      <button class="bg-green-50 text-white rounded-full p-2 hover:bg-white hover:text-black focus:outline-none w-12 h-12 flex items-center justify-center">
               icon
             </button>
-          </div>
-          
+    </div>
+
   </div>
 </div>
 
@@ -19,47 +18,49 @@
 
 <!-- css du body a iinclure dans chaque page  -->
 <div class="pt-24 container mx-auto">
-<div class="bg-white border p-6 rounded shadow h-full shadow-lg ">
+  <div class="bg-white border p-6 rounded shadow h-full shadow-lg ">
 
-<!-- css du body a iinclure dans chaque page  -->
+    <!-- css du body a iinclure dans chaque page  -->
 
-<h2> tous les capteurs </h2>
+    <h2> tous les capteurs </h2>
 
-<div class="flex flex-wrap overflow-hidden sm:-mx-2 shadow-lg ">
+    <div class="flex flex-wrap overflow-hidden sm:-mx-2 shadow-lg ">
 
-<div *ngFor="let sensor of sensors" class="bg-white flex  justify-evenly  shadow p-4 rounded lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 ">
- <div class=" w-auto"> 
+      <div *ngFor="let sensor of sensors"
+        class="bg-white shadow p-4 rounded lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 ">
+        <div class=" w-auto">
           <h3>
-            
+
             capteur {{sensor.idSensor}}
-            
+
 
 
           </h3>
           <p *ngIf="sensor.description">
-          Description: {{ sensor.description }}
-        </p>
-        <p *ngIf="sensor.description">
-          sur la serre : {{ sensor.idSerre }}
-        </p>
-        <a  class="button flex items-center w-20 shadow border-blue-500 border-2 rounded-full  px-4 py-2 text-blue-500 hover:bg-blue-500 hover:text-white" [title]="sensor"  [routerLink]= "['/sensors', sensor.idSensor]">
-          Details
-        </a>
-</div>
-<div class=" justify-end w-auto">
+            Description: {{ sensor.description }}
+          </p>
+          <p *ngIf="sensor.description">
+            sur la serre : {{ sensor.idSerre }}
+          </p>
+          <a class="button flex items-center w-20 shadow border-blue-500 border-2 rounded-full  px-4 py-2 text-blue-500 hover:bg-blue-500 hover:text-white"
+            [title]="sensor" [routerLink]="['/sensors', sensor.idSensor]">
+            Details
+          </a>
+        </div>
+        <div class=" justify-end w-auto">
 
-<p *ngIf="sensor.description">
-humidite : {{ sensor.humidite }}
-</p>
-<p *ngIf="sensor.description">
-temperature: {{ sensor.temperature }}
-</p>
-<p *ngIf="sensor.description">
-luminosite : {{ sensor.luminosite }}
-</p>
-</div>
-</div> 
+          <p *ngIf="sensor.description">
+            humidite : {{ sensor.humidite }}
+          </p>
+          <p *ngIf="sensor.description">
+            temperature: {{ sensor.temperature }}
+          </p>
+          <p *ngIf="sensor.description">
+            luminosite : {{ sensor.luminosite }}
+          </p>
+        </div>
+      </div>
 
 
-</div>
-</div>
+    </div>
+  </div>
