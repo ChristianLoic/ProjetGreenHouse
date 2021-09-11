@@ -29,12 +29,15 @@
 <!-- css du body a iinclure dans chaque page  -->
   <div class="pt-24 container mx-auto">
     <div class="bg-white border p-6 rounded shadow h-full shadow-lg ">
-      <!-- css du body a iinclure dans chaque page  -->
+
+  <!-- css du body a iinclure dans chaque page  -->
 
   <!-- lien pour les les grids et les listes 
+
   https://tailwindgrids.com/#/
   https://tailwindtemplates.io/cards/ 
   https://dev.to/larainfo/tailwind-css-simple-list-group-examples-30p
+
 -->
 
 
@@ -42,7 +45,10 @@
 
 <h2> Serres</h2>
 <div class="flex flex-wrap overflow-hidden sm:-mx-2 shadow-lg ">
-<div *ngFor="let serre of serres"   class="bg-white shadow p-4 rounded lg:w-64 w-full overflow-hidden hover:bg-green-5  sm:my-2 sm:px-2 xl:w-1/2 "> 
+
+<div *ngFor="let serre of serres"   
+class="bg-white shadow p-4 rounded lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 "> 
+
      
         <h3>
           
@@ -54,7 +60,7 @@
         <p *ngIf="serre.description">
         Description: {{ serre.description }}
       </p>
-      <a  class=button [title]="  ' serre' +serre.idSerre" [routerLink]= "['/serres', serre.idSerre]">
+      <a  class="button flex items-center shadow border-blue-500 border-2 rounded-full  px-4 py-2 text-blue-500 hover:bg- -500 hover:text-white" [title]="  ' serre' +serre.idSerre" [routerLink]= "['/serres', serre.idSerre]">
         voir les informations des capteurs
       </a>
 </div>

@@ -9,6 +9,8 @@ import { Sensor, sensors } from '../sensors';
 
 import { Input } from '@angular/core';
 
+import { ChartType } from 'angular-google-charts';
+
 
 
 
@@ -42,6 +44,14 @@ export class SensorListComponent implements OnInit {
 
 
     }
+    myType = ChartType.LineChart;
+    myData = [
+  ['London', 8136000],
+  ['New York', 8538000],
+  ['Paris', 2244000],
+  ['Berlin', 3470000],
+  ['Kairo', 19500000]
+];
  
    
   }
