@@ -1,0 +1,47 @@
+[
+  {
+    "idSerre":1,
+    "description": "bananeTest",
+    "idProfil": 1
+  },
+  {
+    "idSerre":2,
+    "description": "mangueTest",
+    "idProfil": 1
+  },
+  {
+    "idSerre":3,
+    "description": "orangeTest",
+    "idProfil": 1
+  },
+  {
+    "idSerre":1,
+    "description": "bananeTest",
+    "idProfil": 1
+  },
+  {
+    "idSerre":2,
+    "description": "mangueTest",
+    "idProfil": 1
+  },
+  {
+    "idSerre":3,
+    "description": "orangeTest",
+    "idProfil": 1
+  },{
+    "idSerre":1,
+    "description": "bananeTest",
+    "idProfil": 1
+  },
+  {
+    "idSerre":2,
+    "description": "mangueTest",
+    "idProfil": 1
+  },
+  {
+    "idSerre":3,
+    "description": "orangeTest",
+    "idProfil": 1
+  }
+]
+

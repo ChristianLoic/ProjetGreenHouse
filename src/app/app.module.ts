@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -17,6 +18,7 @@ import { SensorDetailsComponent } from './sensor-details/sensor-details.componen
   imports: [
     GoogleChartsModule,
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot([
