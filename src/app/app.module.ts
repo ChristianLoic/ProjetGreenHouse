@@ -13,6 +13,7 @@ import { SerreListComponent } from './serre-list/serre-list.component';
 import { SensorListComponent } from './sensor-list/sensor-list.component';
 import { AllSensorComponent } from './all-sensor/all-sensor.component';
 import { SensorDetailsComponent } from './sensor-details/sensor-details.component';
+import { DataTestComponent } from './data-test/data-test.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { SensorDetailsComponent } from './sensor-details/sensor-details.componen
       { path: '', component: SerreListComponent },
       { path: 'serres/:idSerre', component: SensorListComponent },
       { path: 'sensors/:idSensor', component: SensorDetailsComponent },
+      { path: 'TEST', component: DataTestComponent},
       { path: 'allSensors', component: AllSensorComponent}
     ])
   ],
@@ -35,7 +37,9 @@ import { SensorDetailsComponent } from './sensor-details/sensor-details.componen
     SerreListComponent,
     SensorListComponent,
     AllSensorComponent,
-    SensorDetailsComponent
+    SensorDetailsComponent,
+    DataTestComponent
+
   ],
   bootstrap: [AppComponent]
 })
