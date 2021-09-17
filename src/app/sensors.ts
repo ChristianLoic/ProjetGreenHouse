@@ -7,6 +7,7 @@ export interface Sensor
                 humidite: number;
                 typeData: string;
                 idSerre:number;
+                
 }
 
 

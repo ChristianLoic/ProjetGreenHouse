@@ -6,7 +6,7 @@
    
   <div class="p-8">
           <div class="bg-white flex items-center rounded-full shadow-xl">
-                  <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none bg-opacity-0" id="search" type="text" placeholder="Search by Zon">
+                  <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none bg-opacity-0" id="search" type="text" placeholder="Search by name">
                   
                   <div class="p-4">
                     <button class="bg-green-50 text-white rounded-full p-2 hover:bg-white hover:text-black focus:outline-none w-12 h-12 flex items-center justify-center">
@@ -37,9 +37,11 @@
 <div class="flex flex-wrap overflow-hidden sm:-mx-2 shadow-lg ">
 
 <div *ngFor="let serre of serres"   
-class="bg-white shadow p-4 rounded lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 "> 
+class="bg-white shadow p-4 rounded   flex  justify-around   lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 "> 
 
      
+
+    <div class="">
         <h3>
           
           serre {{serre.idSerre}}
@@ -50,8 +52,11 @@ class="bg-white shadow p-4 rounded lg:w-64 w-full overflow-hidden hover:bg-green
         <p *ngIf="serre.description">
         Description: {{ serre.description }}
       </p>
-      <a  class="button flex items-center shadow border-blue-500 border-2 rounded-full  px-4 py-2 text-blue-500 hover:bg- -500 hover:text-white" [title]="  ' serre' +serre.idSerre" [routerLink]= "['/serres', serre.idSerre]">
-        voir les informations des capteurs
-      </a>
+    </div>
+    <div>
+            <a  class="button flex items-center shadow border-blue-500 border-2 rounded-full  px-4 py-2 text-blue-500 hover:bg-blue-500 hover:text-white w-40 " [title]="  ' serre' +serre.idSerre" [routerLink]= "['/serres', serre.idSerre]">
+              ses capteurs
+            </a>
+    </div>
  </div>
     </div>

@@ -16,6 +16,8 @@
 
 
 
+
+
 <!-- css du body a iinclure dans chaque page  -->
 <div class="pt-24 container mx-auto">
   <div class="bg-white border p-6 rounded shadow h-full shadow-lg ">
@@ -27,14 +29,12 @@
     <div class="flex flex-wrap overflow-hidden sm:-mx-2 shadow-lg ">
 
       <div *ngFor="let sensor of sensors"
-        class="bg-white shadow p-4 rounded lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 ">
+        class="bg-white shadow p-4 rounded   flex  justify-around   lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 ">
         <div class=" w-auto">
           <h3>
 
             capteur {{sensor.idSensor}}
              
-
-
           </h3>
           <p *ngIf="sensor.description">
             Description: {{ sensor.description }}
@@ -42,10 +42,7 @@
           <p *ngIf="sensor.description">
             sur la serre : {{ sensor.idSerre }}
           </p>
-          <a class="button flex items-center w-20 shadow border-blue-500 border-2 rounded-full  px-4 py-2 text-blue-500 hover:bg-blue-500 hover:text-white"
-            [title]="sensor" [routerLink]="['/sensors', sensor.idSensor]">
-            Details
-          </a>
+        
         </div>
         <div class=" justify-end w-auto">
 
@@ -58,6 +55,9 @@
           <p *ngIf="sensor.description">
             luminosite : {{ sensor.luminosite }}
           </p>
+        </div>
+        <div>
+ 
         </div>
       </div>
 
