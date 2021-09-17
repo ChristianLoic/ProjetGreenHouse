@@ -50,8 +50,7 @@ export class SensorListComponent implements OnInit {
   ['New York', 8538000],
   ['Paris', 2244000],
   ['Berlin', 3470000],
-  ['Kairo', 19500000]
-];
+  ['Kairo', 19500000]];
  
    
   }
