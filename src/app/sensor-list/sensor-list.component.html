@@ -56,7 +56,9 @@ serre numero: {{ serre.idSerre }}
     
 
 
-                             <div *ngIf="sensor.idSerre == serre.idSerre"class="bg-white flex  justify-evenly  shadow p-4 rounded lg:w-64 overflow-hidden hover:bg-green-50 "  >   
+                             <div *ngIf="sensor.idSerre == serre.idSerre"class="bg-white flex   justify-around
+                w-full
+                 rounded lg:w-64 overflow-hidden hover:bg-green-50 "  >   
                             <a [title]="sensor"  [routerLink]= "['/sensors', sensor.idSensor]">
                               
                               
