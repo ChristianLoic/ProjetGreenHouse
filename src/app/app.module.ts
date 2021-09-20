@@ -28,7 +28,7 @@ import { LoginComponent } from './login/login.component';
       { path: 'serres/:idSerre', component: SensorListComponent },
       { path: 'sensors/:idSensor', component: SensorDetailsComponent },
       { path: 'TEST', component: DataTestComponent},
-      { path: 'login', component: Logi},
+      { path: 'login', component: LoginComponent},
       { path: 'allSensors', component: AllSensorComponent}
     ])
   ],
