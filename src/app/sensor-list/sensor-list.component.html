@@ -48,15 +48,15 @@ serre numero: {{ serre.idSerre }}
 
 
 
-<div class="flex flex-wrap h-full">
+<div class="flex flex-wrap h-full sm:-mx-2 shadow-lg">
 
 
 
-<div *ngFor="let sensor of sensors"  >
+<div *ngFor="let sensor of sensors" class="bg-white shadow p-4 rounded   flex  justify-around   lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 " >
     
 
 
-                              <div *ngIf="sensor.idSerre == serre.idSerre" class="bg-white flex  justify-evenly  shadow p-4 rounded lg:w-64 overflow-hidden hover:bg-green-50 " >
+                              <div *ngIf="sensor.idSerre == serre.idSerre" <!--class="bg-white flex  justify-evenly  shadow p-4 rounded lg:w-64 overflow-hidden hover:bg-green-50 " --> >
 
 
                                 
