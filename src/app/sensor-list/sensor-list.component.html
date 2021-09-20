@@ -44,7 +44,7 @@ serre numero: {{ serre.idSerre }}
 
 <!-- css du body a iinclure dans chaque page  -->
 
-<h2>liste des capteurs de la serre    {{serre.idSerre}}</h2>
+<h2> capteurs de la serre    {{serre.idSerre}}</h2>
 
 
 
@@ -52,14 +52,11 @@ serre numero: {{ serre.idSerre }}
 
 
 
-<div *ngFor="let sensor of sensors" class="bg-white shadow p-4 rounded   flex  justify-around   lg:w-64 w-full overflow-hidden hover:bg-green-50  sm:my-2 sm:px-2 xl:w-1/2 " >
+<div *ngFor="let sensor of sensors" class="bg-white shadow p-4 rounded   flex  justify-around   w-full overflow-hidden  xl:w-1/2 " >
     
 
 
-                              <div *ngIf="sensor.idSerre == serre.idSerre" <!--class="bg-white flex  justify-evenly  shadow p-4 rounded lg:w-64 overflow-hidden hover:bg-green-50 " --> >
-
-
-                                
+                             <div *ngIf="sensor.idSerre == serre.idSerre"class="bg-white flex  justify-evenly  shadow p-4 rounded lg:w-64 overflow-hidden hover:bg-green-50 "  >   
                             <a [title]="sensor"  [routerLink]= "['/sensors', sensor.idSensor]">
                               
                               
