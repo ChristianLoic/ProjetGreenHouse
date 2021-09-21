@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { HelloComponent } from './hello.component';
@@ -13,12 +14,16 @@ import { SerreListComponent } from './serre-list/serre-list.component';
 import { SensorListComponent } from './sensor-list/sensor-list.component';
 import { AllSensorComponent } from './all-sensor/all-sensor.component';
 import { SensorDetailsComponent } from './sensor-details/sensor-details.component';
-import { DataTestComponent } from './data-test/data-test.component';
+// import { DataTestComponent } from './data-test/data-test.component';
+
+
+
 
 @NgModule({
   imports: [
     GoogleChartsModule,
     BrowserModule,
+  
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
@@ -26,7 +31,7 @@ import { DataTestComponent } from './data-test/data-test.component';
       { path: '', component: SerreListComponent },
       { path: 'serres/:idSerre', component: SensorListComponent },
       { path: 'sensors/:idSensor', component: SensorDetailsComponent },
-      { path: 'TEST', component: DataTestComponent},
+      // { path: 'TEST', component: DataTestComponent },
       { path: 'allSensors', component: AllSensorComponent}
     ])
   ],
@@ -38,9 +43,11 @@ import { DataTestComponent } from './data-test/data-test.component';
     SensorListComponent,
     AllSensorComponent,
     SensorDetailsComponent,
-    DataTestComponent
+    // DataTestComponent,
+
 
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
