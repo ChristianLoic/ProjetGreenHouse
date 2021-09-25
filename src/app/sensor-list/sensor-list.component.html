@@ -7,15 +7,85 @@
 
 <!-- css du body a iinclure dans chaque page  -->
 
-serre numero: {{ serre.idSerre }}  
+
+
+
+
+<!-- sommaire  -->
+
+
+
+<div  class="w-full  h-40 flex ">
+
+<div class="w-2/6 justify-center  border   border-blue-500 flex flex-wrap h-full ">
+     <div  class="rounded lg:w-full flex  justify-center md:w-full" > 
+      <h1> 
+    serre numero: {{ serre.idSerre }}  
+      </h1>
+     </div>
+
+     <div class="">
+  <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/serre.png?raw=true"  width="110"/>
+     </div>
+
+</div>
+
+<div class=" w-4/6   h-full  border border-purple    flex justify-around">
+
+<ul class="justify-center  border   border-black-500 flex flex-wrap w-full "> 
+
+                <div  class="rounded lg:w-full flex  justify-center md:w-full" > 
+                <h1> 
+                humidite air  : {{ serre.idSerre }}  
+                </h1>
+                </div>
+
+                <div class="">
+                <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/humidit%C3%A9%20air.png?raw=true"  width="110"/>
+                </div>
+
+
+</ul>
+
+<ul class="justify-center  border   border-black-500 flex flex-wrap w-full ">   
+
+          <div  class="rounded lg:w-full flex  justify-center md:w-full" > 
+          <h1> 
+          luminosite   : {{ serre.idSerre }}  
+          </h1>
+          </div>
+
+          <div class="">
+          <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/soleil.png?raw=true"  width="110"/>
+          </div>
+
+
+</ul>
+
+<ul class="justify-center  border   border-black-500 flex flex-wrap w-full "> 
+          <div  class="rounded lg:w-full flex  justify-center md:w-full" > 
+          <h1> 
+          humidite sol   : {{ serre.idSerre }}  
+          </h1>
+          </div>
+
+          <div class="">
+          <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/humidit%C3%A9%20sol.png?raw=true"  width="110"/>
+          </div>
+
+</ul>
+</div>
+
+</div>
+
+<!-- sommaire  -->
+
 <!-- graph -->
-
-
-
 <div class="  overflow-hidden   bg-white border p-6 rounded shadow h-full shadow-lg   lg:w-auto hidden lg:block  ">
 <google-chart class=" overflow-hidden " [type]="myType" [data]="myData" [width]=1000 [height]=700 ></google-chart>
 
 </div>
+<!-- graph -->
 
 <!-- barre de recherche -->
 <div class="p-8">
@@ -51,22 +121,25 @@ serre numero: {{ serre.idSerre }}
 
 <div *ngFor="let sensor of sensors" class="bg-white shadow p-4 rounded   flex  justify-around   w-full overflow-hidden  xl:w-1/2 " >
     
-
-
-                             <div *ngIf="sensor.idSerre == serre.idSerre"class="bg-white flex   justify-around
+ <div *ngIf="sensor.idSerre == serre.idSerre"class="bg-white flex   justify-around
                 w-full
                  rounded lg:w-64 overflow-hidden hover:bg-green-50 "  >   
+                           
                             <a [title]="sensor"  [routerLink]= "['/sensors', sensor.idSensor]">
                               
-                              
-                              {{ serre.idSerre }}
-
-
+                              <div *ngIf="sensor.description =='humidite air'" >
+                              <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/capteur%20%20humidit%C3%A9%20air.png?raw=true"  width="110" />
+                             </div>
+                             
+                             <div *ngIf="sensor.description =='humidite sol'" >
+                             <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/capteur%20%20humidit%C3%A9%20sol.png?raw=true"  width="110" />
+                            </div>
+                            
+                            <div *ngIf="sensor.description =='luminosite'" >
+                            <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/capteur%20luminosit%C3%A9.png?raw=true"  width="110"/>
+                            </div>
+                             
                             </a>
-
-
-
-
 
 
                             <h4>{{ sensor.description }}</h4>
