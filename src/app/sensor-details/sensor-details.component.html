@@ -22,9 +22,17 @@
       </h1>
      </div>
 
-     <div class="">
-  <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/serre.png?raw=true"  width="110"/>
+     <div   *ngIf="sensor.description=='humidite air'"class="">
+  <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/capteur%20%20humidit%C3%A9%20air.png?raw=true"  width="110"/>
      </div>
+
+     <div  *ngIf="sensor.description=='humidite sol'" class="">
+     <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/capteur%20%20humidit%C3%A9%20sol.png?raw=true"  width="110"/>
+        </div>
+
+        <div  *ngIf="sensor.description=='luminosite'" class="">
+        <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/capteur%20luminosit%C3%A9.png?raw=true"  width="110"/>
+           </div>
 
 </div>
 
