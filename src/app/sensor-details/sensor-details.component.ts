@@ -6,6 +6,8 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Sensor, sensors } from '../sensors';
 
+import { ChartType } from 'angular-google-charts';
+
 
 @Component({
   selector: 'app-sensor-details',
@@ -29,5 +31,14 @@ export class SensorDetailsComponent implements OnInit
    // Find the sensor that correspond with the id provided in route.
    this.sensor = sensors.find(sensor => sensor.idSensor === sensorIdFromRoute);
   }
+
+  
+  myType = ChartType.LineChart;
+  myData = [
+['London', 8136000],
+['New York', 8538000],
+['Paris', 2244000],
+['Berlin', 3470000],
+['Kairo', 19500000]];
 
 }

@@ -33,6 +33,7 @@ export const sensors =
     idSerre:1,
   },
   {
+    
     idSensor: 3,
     description: 'stri',
     temperature: 30,

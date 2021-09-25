@@ -44,6 +44,7 @@ export class SensorListComponent implements OnInit {
 
 
     }
+    
     myType = ChartType.LineChart;
     myData = [
   ['London', 8136000],

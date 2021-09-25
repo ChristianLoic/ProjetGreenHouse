@@ -1,19 +1,71 @@
 
+<!-- css du body a iinclure dans chaque page  -->
+<div class="pt-24 container mx-auto">
+<div class="bg-white border p-6 rounded shadow h-full shadow-lg ">
 
-
-
-
-
-
-
+<!-- css du body a iinclure dans chaque page  -->
 
 
 <h2>sensor Details</h2>
 
-<div *ngIf="sensor">
-  <h3 >  idSensor {{ sensor.idSensor }}</h3>
-  <h4>  description {{ sensor.description }}</h4>
-  <p>  typeData {{ sensor.typeData }}</p>
-  <p> idSerre  {{ sensor.idSerre }}</p>
+
+
+
+
+
+<div  class="w-full  h-40 flex ">
+
+<div class=" w-2/6  flex justify-center  h-full border border-blue-500">
+  <h1>nom du capteur </h1>
+
+
 </div>
 
+<div class=" w-4/6   h-full  border border-purple    flex justify-around">
+
+<ul class="border flex justify-center border-black w-full"> humidite   </ul>
+
+<ul class="border  flex justify-center border-black w-full">  luminosite </ul>
+
+<ul class="border  flex justify-center border-black w-full">  temperature </ul>
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="pt-24 container mx-auto">
+<div class="bg-white border p-6 rounded shadow h-full shadow-lg ">
+
+
+          <div *ngIf="sensor" class=" flex  w-full justify-around">
+
+<h3 >  idSensor {{ sensor.idSensor }}</h3>
+<h4>  description {{ sensor.description }}</h4>
+<h4>  temperature {{ sensor.temperature }}</h4>
+<h4>  luminosite {{ sensor.luminosite }}</h4>
+<h4>  humidite {{ sensor.humidite }}</h4>        
+<p>  typeData {{ sensor.typeData }}</p>
+<p> idSerre  {{ sensor.idSerre }}</p>
+
+
+
+          </div>
+
+          <!-- graph -->
+         
+
+<div class="  overflow-hidden   bg-white border p-6 rounded shadow h-full shadow-lg   lg:w-auto hidden lg:block  ">
+<google-chart class=" overflow-hidden " [type]="myType" [data]="myData" [width]=1000 [height]=700 ></google-chart>
+
+             <!-- graph -->
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
