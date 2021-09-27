@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SerreService } from '../Services/serre.service';
+
 
 @Component({
   selector: 'app-data-test',
@@ -10,9 +10,8 @@ export class DataTestComponent implements OnInit {
 
 
 
-  serres = this.serreService.getData();
 
-  constructor(private serreService: SerreService) {}
+  constructor() {}
 
   ngOnInit() {}
 }
