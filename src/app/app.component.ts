@@ -17,8 +17,6 @@ export class AppComponent  {
     ['Berlin', 3470000],
     ['Kairo', 19500000]
 
-  
-    
   ];
  }
 
