@@ -25,7 +25,6 @@ import { SensorDetailsComponent } from './sensor-details/sensor-details.componen
       { path: '', component: SerreListComponent },
       { path: 'serres/:idSerre', component: SensorListComponent },
       { path: 'sensors/:idSensor', component: SensorDetailsComponent },
-      { path: 'TEST', component: DataTestComponent},
       { path: 'allSensors', component: AllSensorComponent}
     ])
   ],
@@ -37,7 +36,6 @@ import { SensorDetailsComponent } from './sensor-details/sensor-details.componen
     SensorListComponent,
     AllSensorComponent,
     SensorDetailsComponent,
-    DataTestComponent,
 
   ],
   bootstrap: [AppComponent]
