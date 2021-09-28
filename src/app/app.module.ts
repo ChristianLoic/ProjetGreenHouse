@@ -14,7 +14,6 @@ import { SensorListComponent } from './sensor-list/sensor-list.component';
 import { AllSensorComponent } from './all-sensor/all-sensor.component';
 import { SensorDetailsComponent } from './sensor-details/sensor-details.component';
 import { DataTestComponent } from './data-test/data-test.component';
-import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -28,7 +27,6 @@ import { LoginComponent } from './login/login.component';
       { path: 'serres/:idSerre', component: SensorListComponent },
       { path: 'sensors/:idSensor', component: SensorDetailsComponent },
       { path: 'TEST', component: DataTestComponent},
-      { path: 'Login', component: LoginComponent},
       { path: 'allSensors', component: AllSensorComponent}
     ])
   ],
@@ -41,7 +39,6 @@ import { LoginComponent } from './login/login.component';
     AllSensorComponent,
     SensorDetailsComponent,
     DataTestComponent,
-    LoginComponent
 
   ],
   bootstrap: [AppComponent]
