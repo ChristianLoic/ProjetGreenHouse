@@ -232,5 +232,21 @@ export const serres = [
     humiditeAir: 20,
     luminosite:10,
     idProfil: 1
+  },
+  {
+    idSerre: 3,
+    description: 'banane',
+    humiditeSol:30,
+    humiditeAir: 20,
+    luminosite:10,
+    idProfil: 1
+  },
+  {
+    idSerre: 3,
+    description: 'brocoli',
+    humiditeSol:30,
+    humiditeAir: 20,
+    luminosite:10,
+    idProfil: 1
   }
 ];

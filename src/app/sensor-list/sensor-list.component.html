@@ -73,8 +73,8 @@
 <!-- sommaire  -->
 
 <!-- graph -->
-<div class="  overflow-hidden   bg-white border p-6 rounded shadow h-full shadow-lg   lg:w-auto hidden lg:block  ">
-<google-chart class=" overflow-hidden " [type]="myType" [data]="myData" [width]=1000 [height]=700 ></google-chart>
+<div class="  overflow-hidden   bg-white border p-6 rounded shadow h-full shadow-lg   lg:w-auto  lg:block  ">
+<google-chart class=" overflow-hidden "[type]="myType" [data]="myData"  [height]="400" [dynamicResize]="true"  ></google-chart>
 
 </div>
 <!-- graph -->
