@@ -26,7 +26,6 @@ export class SensorDetailsComponent implements OnInit {
       (sensor) => sensor.idSensor === sensorIdFromRoute
     );
   }
-
   myType = ChartType.LineChart;
   myData = [
     ['London', 8136000],

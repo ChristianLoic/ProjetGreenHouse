@@ -31,7 +31,6 @@ export class SensorListComponent implements OnInit {
     // Find the product that correspond with the id provided in route.
     this.serre = serres.find((serre) => serre.idSerre === serreIdFromRoute);
   }
-
   myType = ChartType.LineChart;
   myData = [
     ['London', 8136000],
@@ -40,4 +39,5 @@ export class SensorListComponent implements OnInit {
     ['Berlin', 3470000],
     ['Kairo', 19500000],
   ];
+
 }

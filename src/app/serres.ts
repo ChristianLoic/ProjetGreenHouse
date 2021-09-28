@@ -1,4 +1,5 @@
-export interface Serre {
+export interface Serre 
+{
   idSerre: number;
   description: string;
   humiditeSol:number;
