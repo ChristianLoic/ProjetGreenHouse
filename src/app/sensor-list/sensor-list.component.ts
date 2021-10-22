@@ -20,7 +20,7 @@ export class SensorListComponent implements OnInit {
   sensors = sensors;
   serres = serres;
   serre: Serre | undefined;
-
+ 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {

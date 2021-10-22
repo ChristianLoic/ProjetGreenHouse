@@ -11,5 +11,5 @@ export class AllSensorComponent  {
 
   sensors = sensors;
  
-
+ 
 }

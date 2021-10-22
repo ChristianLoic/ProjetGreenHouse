@@ -34,5 +34,5 @@ export const zones = [
     plantationDate: 'brocoli rose',
     typeFood: 'legume',
     idSerre: 2
-  }
+  } 
 ];

@@ -30,7 +30,7 @@ export const sensors = [
     description: 'humidite air',
     valeur: 30,
     idSerre: 2,
-  },
+  }, 
 
   {
     idSensor: 2,

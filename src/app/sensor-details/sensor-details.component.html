@@ -7,11 +7,11 @@
 
 
               <h2>sensor Details</h2>
+ 
 
+              <div  class="w-full  h-40 flex justify-around  items-end">
 
-              <div  class="w-full  h-40 flex ">
-
-                    <div class="w-2/6 justify-center  border   border-blue-500 flex flex-wrap h-full ">
+                    <div class="w-1/6 justify-center  border   border-blue-500 flex flex-wrap h-full ">
                         <div  class="rounded lg:w-full flex  justify-center md:w-full" > 
                           <h1> 
                         serre numero: {{ sensor.idSerre }}  
@@ -32,7 +32,7 @@
 
                     </div>
 
-                    <div class=" w-4/6   h-full  border border-purple    flex justify-around">
+                    <!-- <div class=" w-4/6   h-full  border border-purple    flex justify-around">
 
                     <ul  *ngIf="sensor.description=='humidite air'" class="justify-center  border   border-black-500 flex flex-wrap w-full "> 
 
@@ -76,11 +76,16 @@
                               </div>
 
                     </ul>
+                    </div> -->
+
+                    <div class=" w-2/6   h-1/2  border border-purple    flex justify-around items-end">
+                      Nom du Capteur 
                     </div>
 
-
-
-                  
+                      
+                    <div class=" w-1/5   h-1/2  border border-purple    flex justify-around items-end">
+                      historique
+                    </div>
             
             </div>
 

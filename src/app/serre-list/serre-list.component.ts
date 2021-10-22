@@ -10,3 +10,4 @@ import { serres } from '../serres';
 export class SerreListComponent {
   serres = serres;
 }
+ 
