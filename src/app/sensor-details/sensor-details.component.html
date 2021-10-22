@@ -6,12 +6,12 @@
     <!-- css du body a iinclure dans chaque page  -->
 
 
-              <h2>sensor Details</h2>
+             
  
 
               <div  class="w-full  h-40 flex justify-around  items-end">
 
-                    <div class="w-1/6 justify-center  border   border-blue-500 flex flex-wrap h-full ">
+                    <div class="w-1/6 justify-center  border   border-purple  flex flex-wrap h-full ">
                         <div  class="rounded lg:w-full flex  justify-center md:w-full" > 
                           <h1> 
                         serre numero: {{ sensor.idSerre }}  
@@ -78,19 +78,19 @@
                     </ul>
                     </div> -->
 
-                    <div class=" w-2/6   h-1/2  border border-purple    flex justify-around items-end">
+                    <div class=" w-2/6   h-1/2  border border-purple   bg-orange  text-white  flex   justify-around items-end">
                       Nom du Capteur 
                     </div>
 
                       
-                    <div class=" w-1/5   h-1/2  border border-purple    flex justify-around items-end">
+                    <div class=" w-1/5   h-1/2  border border-purple   bg-orange  text-white   flex justify-around items-end">
                       historique
                     </div>
             
             </div>
 
               <div class="pt-24 container mx-auto">
-              <div class="bg-white border p-6 rounded shadow h-full shadow-lg ">
+              <div class="bg-green-47 border p-6 rounded shadow h-full shadow-lg flex flex-wrap justify-between ">
 
 
               <div *ngIf="sensor" class=" flex  w-full justify-around">
@@ -108,10 +108,65 @@
                         <!-- graph -->
                       
 
-              <div class="overflow-hidden  bg-white border p-6 rounded shadow h-full shadow-lg  lg:block  ">
-              <google-chart class=" overflow-hidden " [type]="myType" [data]="myData"  [height]="400" [dynamicResize]="true" ></google-chart>
+              <div class="overflow-hidden  bg-white  border p-6 rounded shadow h-full shadow-lg  border border-blue-500 w-4/6">
+              <google-chart  [type]="myType" [data]="myData"  [height]="400" [dynamicResize]="true " ></google-chart>
 
                           <!-- graph -->
+              </div>
+              <div class="w-2/7 border border-blue-500  bg-green-50 ">
+
+
+                          <ul  *ngIf="sensor.description=='humidite air'" class="justify-center  border   border-black-500 flex flex-wrap w-full  h-full items-center"> 
+
+                          <div class="w-full h-4/6  flex items-center justify-center  border border-blue-500">
+                          <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/humidit%C3%A9%20air.png?raw=true"  />
+                          </div>
+
+                          <div  class="" > 
+                          <h1> 
+                          humidite air  : {{ sensor.valeur }}  
+                          </h1>
+                          <p>
+                          Zone Zone id
+                          </p>
+                          </div>
+                        </ul>
+                            
+
+                        <ul *ngIf="sensor.description=='luminosite'" class="justify-center  border   border-black-500 flex flex-wrap w-full   h-full items-center">   
+
+                        <div class=" w-full h-4/6  flex items-center justify-center  border border-blue-500 ">
+                        <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/soleil.png?raw=true"  width="110"/>
+                        </div>
+
+                        <div  class=" " > 
+                        <h1> 
+                        luminosite   : {{ sensor.valeur }}  
+                        </h1>
+                        <p>
+                        Zone Zone id
+                        </p>
+                        </div>
+                         </ul>
+
+
+                           <ul *ngIf="sensor.description=='humidite sol'" class="justify-center  border   border-black-500 flex flex-wrap w-full h-full items-center "> 
+
+                           <div class="w-full h-4/6  flex items-center justify-center  border border-blue-500">
+                           <img src="https://github.com/ChristianLoic/IconneProjetSerre/blob/main/actual%20icones/humidit%C3%A9%20sol.png?raw=true"  width="110"/>
+                           </div>
+
+
+                              <div  class="" > 
+                              <h1> 
+                              humidite sol   : {{ sensor.valeur }}  
+                              </h1>
+                              </div>
+
+                             
+                    </ul>
+
+                
               </div>
               </div>
               </div>

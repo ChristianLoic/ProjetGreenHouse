@@ -34,4 +34,5 @@ export class SensorDetailsComponent implements OnInit {
     ['Berlin', 3470000],
     ['Kairo', 19500000],
   ];
+  myBackgroundColor=[]
 }
